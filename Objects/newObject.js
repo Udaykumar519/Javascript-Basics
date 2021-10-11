@@ -1,0 +1,14 @@
+var person=new Object();
+person["firstName"]="uday";
+person["lastName"]="kumar";
+var fullName="fullName";
+person[fullName]="Uday Kumar";
+console.log(person);
+console.log(person["firstName"]);
+person.address=new Object();
+person.address.street="1st Main";
+person.address.city="Nellore";
+person.address.state="AP";
+console.log(person.address);
+console.log(person.address.street);
+console.log(person);
