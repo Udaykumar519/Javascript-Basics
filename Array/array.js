@@ -1,3 +1,5 @@
+// Array can take any type of values
+
 var data=[
     1,
     "uma",
