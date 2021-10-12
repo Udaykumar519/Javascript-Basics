@@ -110,7 +110,16 @@ arraySum([1,2,3,4,5,6,7,8,9,10]) //55
 arraySum([1,2,'uma',3,4,5]) //15
 arraySum([1,2,'uma',{a: 'ma'},3,4,5]) //15
 arraySum([1,2,[[3],4],5]) //15
-var arraySum=function(){
-    
-}
+function arraySum(array){
+    for (var i=0;i<array.length;i++){
 
+    }
+
+}
+console.log("Hello %s your Id is %i","uday","123456");
+console.log("User object %o",{name:"uday"});
+var userData=[
+    {name:"uday",age:45},
+    {name:"Scott",age:45},
+    {name:"Adam",age:45}]
+console.table(userData);
