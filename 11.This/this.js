@@ -26,7 +26,7 @@ var obj1={
         console.log(self);
         function b(name){
             self.name=name
-            console.log(self);//This is local regerence
+            console.log(self);//This is local reference
         }
         b("update again");
     }
