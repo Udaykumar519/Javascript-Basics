@@ -105,21 +105,31 @@ console.clear();
 //     return (fileName && fileName.split(".").length>1)?fileName.split(".")[1]:false
 // }
 
-arraySum([1,2,3,4,5]) // 15
-arraySum([1,2,3,4,5,6,7,8,9,10]) //55
-arraySum([1,2,'uma',3,4,5]) //15
-arraySum([1,2,'uma',{a: 'ma'},3,4,5]) //15
-arraySum([1,2,[[3],4],5]) //15
+var s1=arraySum([1,2,3,4,5]) // 15
+var s2=arraySum([1,2,3,4,5,6,7,8,9,10]) //55
+var s3=arraySum([1,2,'uma',3,4,5]) //15
+var s4=arraySum([1,2,'uma',{a: 'ma'},3,4,5]) //15
+// arraySum([1,2,[[3],4],5]) //15
 function arraySum(array){
+    var sum=0;
     for (var i=0;i<array.length;i++){
-
+        if (typeof array[i]==="string" || typeof array[i]==="object"){
+            continue;
+        }
+        else{
+        sum=sum+array[i];
     }
-
+    }
+    return sum;
 }
-console.log("Hello %s your Id is %i","uday","123456");
-console.log("User object %o",{name:"uday"});
-var userData=[
-    {name:"uday",age:45},
-    {name:"Scott",age:45},
-    {name:"Adam",age:45}]
-console.table(userData);
+console.log(s1);
+console.log(s2);
+console.log(s3);
+console.log(s4);
+// console.log("Hello %s your Id is %i","uday","123456");
+// console.log("User object %o",{name:"uday"});
+// var userData=[
+//     {name:"uday",age:45},
+//     {name:"Scott",age:45},
+//     {name:"Adam",age:45}]
+// console.table(userData);
